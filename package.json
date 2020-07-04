@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "showcase for egg framework",
   "dependencies": {
-    "egg": "^2"
+    "egg": "^2",
+    "egg-view-nunjucks": "^2.2.0"
   },
   "devDependencies": {
     "autod": "^3",
@@ -35,7 +36,8 @@
     "url": ""
   },
   "keywords": [
-    "egg", "egg-framework"
+    "egg",
+    "egg-framework"
   ],
   "author": "TZ <atian25@qq.com>",
   "files": [
@@ -46,6 +48,9 @@
     "agent.js",
     "index.js"
   ],
-  "eslintIgnore": [ "coverage", "dist" ],
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
   "license": "MIT"
 }
