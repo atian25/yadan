@@ -1,5 +1,5 @@
 {
-  "name": "yadan",
+  "name": "@eggjs/yadan",
   "version": "1.0.0",
   "description": "showcase for egg framework",
   "dependencies": {
@@ -29,11 +29,15 @@
   },
   "ci": {
     "version": "12",
-    "type": "github"
+    "type": "github",
+    "os": {
+      "github": "ubuntu"
+    }
   },
+  "homepage": "https://github.com/atian25/yadan",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:atian25/yadan.git"
   },
   "keywords": [
     "egg",
