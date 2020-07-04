@@ -1,0 +1,51 @@
+{
+  "name": "yadan",
+  "version": "1.0.0",
+  "description": "showcase for egg framework",
+  "dependencies": {
+    "egg": "^2"
+  },
+  "devDependencies": {
+    "autod": "^3",
+    "autod-egg": "^1",
+    "egg-bin": "^4",
+    "egg-ci": "^1",
+    "egg-mock": "^4",
+    "eslint": "^7",
+    "eslint-config-egg": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint . --resolve-plugins-relative-to .",
+    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "autod": "autod",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "ci": {
+    "version": "12",
+    "type": "github"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "egg", "egg-framework"
+  ],
+  "author": "TZ <atian25@qq.com>",
+  "files": [
+    "app",
+    "config",
+    "lib",
+    "app.js",
+    "agent.js",
+    "index.js"
+  ],
+  "eslintIgnore": [ "coverage", "dist" ],
+  "license": "MIT"
+}
