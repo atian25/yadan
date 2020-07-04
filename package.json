@@ -2,6 +2,18 @@
   "name": "@eggjs/yadan",
   "version": "1.0.0",
   "description": "showcase for egg framework",
+  "egg": {
+    "declarations": true,
+    "tsHelper": {
+      "watchDirs": {
+        "rpc": {
+          "enabled": true,
+          "directory": "app/rpc",
+          "declareTo": "Context.rpc"
+        }
+      }
+    }
+  },
   "dependencies": {
     "egg": "^2",
     "egg-view-nunjucks": "^2.2.0"
