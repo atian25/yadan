@@ -16,10 +16,10 @@ describe('test/framework.test.js', () => {
 
   afterEach(mock.restore);
 
-  it('should GET /', async () => {
+  it('should support nunjucks render', async () => {
     return app.httpRequest()
       .get('/')
-      .expect('framework-example_123456')
+      .expect('<div>yadan</div>\n')
       .expect(200);
   });
 });
