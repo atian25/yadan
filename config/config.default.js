@@ -11,5 +11,17 @@ module.exports = () => {
     },
   };
 
+  config.customLoader = {
+    rpc: {
+      directory: 'app/rpc',
+      inject: 'ctx',
+      loadunit: true,
+    },
+  };
+
+  config.rpc = {
+    host: undefined,
+  };
+
   return config;
 };
